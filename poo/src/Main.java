@@ -3,6 +3,10 @@ public class Main {
         printSquare(10);
         System.out.println("---------------------");
         printSquare(20);
+        System.out.println("--------------");
+        printTriangle(5);
+        System.out.println("-----------");
+        printTriangle(7);
 
 
 
@@ -16,5 +20,14 @@ public class Main {
             //System.out.print();
         }
 
+
+    }
+    public static void printTriangle(int base){
+        for (int i = 0; i <= base - 1; i++){
+            for (int m = 1 ; m <= i +1 ; m++){
+                System.out.print(" * ");
+            }
+            System.out.print("\n");
+        }
     }
 }
